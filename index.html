@@ -10,11 +10,100 @@
     <body>
         <div class="linkpage"><a href="index.html">History</a></div>
         <div class="linkpage"><a href="memory.html">Memory</a></div>
+<div class="container">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display">
+                    </div>
+                    
+                    <div>
+                        <input type="button" value="CE" onclick="display.value = '' ">
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                        <input type="button" value="MC" onclick="removeMem()">
+                        <input type="button" value="/" onclick="display.value += '/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7' ">
+                        <input type="button" value="8" onclick="display.value += '8' ">
+                        <input type="button" value="9" onclick="display.value += '9' ">
+                        <input type="button" value="*" onclick="display.value += '*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4' ">
+                        <input type="button" value="5" onclick="display.value += '5' ">
+                        <input type="button" value="6" onclick="display.value += '6' ">
+                        <input type="button" value="-" onclick="display.value += '-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1' ">
+                        <input type="button" value="2" onclick="display.value += '2' ">
+                        <input type="button" value="3" onclick="display.value += '3' ">
+                        <input type="button" value="+" onclick="display.value += '+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += '00' ">
+                        <input type="button" value="0" onclick="display.value += '0' ">
+                        <input type="button" value="." onclick="display.value += '.' ">
+                        <input type="button" value="%" onclick="display.value += '' ">
+                    </div>
+                    <div>
+                        <input type="button" value="^" onclick="display.value += '**' ">
+                        <input type="button" value="√" onclick="display.value = Math.sqrt(display.value) ">
+                        <input type="button" value="=" onclick="display.value = eval(display.value)" 
+                        class="equal">
+                    </div>
 
-        <table id="calculator">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- <table id="calculator">
             <tr>
                 <td colspan="4">
-                    <input type="text" id="result">
+                    <input type="text" name="display">
                 </td>
             </tr>
             <tr>
@@ -24,33 +113,33 @@
                 <td><input type="button" value="⌫" onclick="back()"></td>
             </tr>
             <tr>
-                <td><input type="button" value="EX" onclick="display('^')"></td>
-                <td><input type="button" value="√" onclick="display('√')"></td>
-                <td><input type="button" value="÷" onclick="display('÷')"></td>
-                <td><input type="button" value="x" onclick="display('x'); operator()"></td>
+                <td><input type="button" value="EX" onclick="display.value +='**' "></td>
+                <td><input type="button" value="√" onclick="display.value += '√' "></td>
+                <td><input type="button"  value="÷" onclick = "display.value += '/' "></td>
+                <td><input type="button"  value="x" onclick="display.value"></td>
             </tr>
             <tr>
                 <td><input type="button" value="7" onclick="display('7')"></td>
                 <td><input type="button" value="8" onclick="display('8')"></td>
                 <td><input type="button" value="9" onclick="display('9')"></td>
-                <td><input type="button" value="/" onclick="display('/') ; operator()"></td>
+                <td><input type="button"  value="/" onclick="display('/') ; operatordivide()"></td>
             </tr>
             <tr>
                 <td><input type="button" value="4" onclick="display('4')"></td>
                 <td><input type="button" value="5" onclick="display('5')"></td>
                 <td><input type="button" value="6" onclick="display('6')"></td>
-                <td><input type="button" value="+" onclick="display('+'); operator()"></td>
+                <td><input type="button" id="+" value="+" onclick="display('+'); operatorplus()"></td>
             </tr>
             <tr>
                 <td><input type="button" value="1" onclick="display('1')"></td>
                 <td><input type="button" value="2" onclick="display('2')"></td>
                 <td><input type="button" value="3" onclick="display('3')"></td>
-                <td><input type="button" value="-" onclick="display('-'); operator()"></td>
+                <td><input type="button" id="-" value="-" onclick="display('-'); operatorminus()"></td>
             </tr>
             <tr>
                 <td><input type="button" value="0" onclick="display('0')"></td>
                 <td><input type="button" value="." onclick="display('.')"></td>
-                <td><input type="button" value="=" onclick="calculate()"></td>
+                <td><input type="button" value="=" onclick="display.value = eval(display.value)"></td>
                 
             </tr>
 
@@ -63,7 +152,7 @@
 
 
         </table>
-
+    </form> -->
 
 
 
