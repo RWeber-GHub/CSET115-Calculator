@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="calc.css" />
   </head>
   <body>
-    <div class="linkpage"><a href="index.html">History</a></div>
-    <div class="linkpage"><a href="memory.html">Memory</a></div>
-    <button id="toggleMem" onclick="displayMem()">Show History</button>
-    <div id="memDisplay"></div>
-
     <div class="container">
       <div class="calculator">
         <form>
@@ -20,13 +15,17 @@
           </div>
 
           <div>
-            <input type="button" value="CE" onclick="display.value = '' " />
+            <input
+              type="button"
+              value="CE"
+              onclick="display.value = '' "
+              class="CE"
+            />
             <input
               type="button"
               value="DE"
               onclick="display.value = display.value.toString().slice(0,-1)"
             />
-            <input type="button" value="MC" onclick="removeMem()" />
             <input type="button" value="/" onclick="display.value += '/' " />
           </div>
           <div>
@@ -51,7 +50,7 @@
             <input type="button" value="00" onclick="display.value += '00' " />
             <input type="button" value="0" onclick="display.value += '0' " />
             <input type="button" value="." onclick="display.value += '.' " />
-            <input type="button" value="%" onclick="display.value += '' " />
+            <input type="button" value="%" onclick="display.value += '%' " />
           </div>
           <div>
             <input type="button" value="^" onclick="display.value += '**' " />
@@ -63,7 +62,7 @@
             <input
               type="button"
               value="="
-              onclick="display.value = storeResult(eval(display.value))"
+              onclick="display.value = eval(display.value)"
               class="equal"
             />
           </div>

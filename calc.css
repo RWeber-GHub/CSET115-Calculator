@@ -36,7 +36,16 @@ form .display input {
 form input.equal {
   width: 145px;
 }
-
-#memDisplay {
-  /* display:none; */
+.linkpage {
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgb(100, 113, 116);
+  display: flex;
+  color: black;
+  font-size: 20px;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+form input.CE {
+  width: 145px;
 }
