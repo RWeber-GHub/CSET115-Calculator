@@ -1,12 +1,9 @@
-// -- memory --
-
 let memory = [];
 
 function storeResult() {
   let equation = display.value;
   let result = eval(equation);
-  display.value = result;
-memoryStore(equation, result);
+  memory.push({ equation, result });
 }
 
 function displayMem() {
@@ -21,12 +18,4 @@ function displayMem() {
       memDisplay.appendChild(div);
     }
   }
-// memory display button
-document.getElementById('toggleMem').addEventListener('click', function() {
-
-
-
-
-}
-
 }
