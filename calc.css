@@ -47,15 +47,3 @@ form input.equal{
     justify-content: flex-end;
     align-content: flex-end;
 }
-a:link{
-    text-decoration: none;
-    color:black;
-}
-a:hover{
-    text-decoration: none;
-    color:black;
-}
-a:visited{
-    text-decoration: none;
-    color:black;
-}
