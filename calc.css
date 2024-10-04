@@ -47,3 +47,6 @@ form input.equal{
     justify-content: flex-end;
     align-content: flex-end;
 }
+form input.CE{
+    width: 145px;
+}
